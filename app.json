@@ -1,1 +1,27 @@
-"name" :
+{
+  "name": "TAURUS",
+  "description": "Taurus is a whatsapp bot made by @I-AM-MUHAMMED with baileys",
+  "repository": "https://github.com/TAURUS-ENC/Nana-MD",
+  "logo": "https://i.imgur.com/89UwiBi.jpeg",
+  "keywords": ["bosco", "nodejs", "bot", "whatsapp bot", "whatsapp automation"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
